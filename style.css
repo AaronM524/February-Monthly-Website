@@ -11,7 +11,7 @@
 .game{
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 750px;
 	width: 100vw;
 	justify-content: center;
 	align-items: center;
@@ -22,7 +22,6 @@
 	position: absolute;
 	top: 0;
 	font-size: 4rem;
-	z-index: 2;
     font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -30,12 +29,9 @@
 
 /* Score Board */
 .score{
-	display: flex;
-	width: 30vw;
-	justify-content: space-evenly;
-	position: absolute;
-	top: 70px;
-	z-index: 1;
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly ;
 }
 
 /* Score */
@@ -43,6 +39,7 @@
 	text-align: center;
 	font-size: 1.5rem;
 	margin-top: 1rem;
+	
 }
 
 /* displaying three buttons in one line */
@@ -110,5 +107,12 @@
   .customfooter {
     background-color: #2832C2;
     color: white;
+	bottom: fixed;
   }
+}
+
+.fonth2 {
+	font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

@@ -102,6 +102,9 @@
   .custombutton2 { 
     width:10px; 
     height: 10px;
+	border-width: 10px;
+	border-color: black;
+	border-style: solid;
   }
   
   .customfooter {
@@ -116,3 +119,12 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
+.button-img {
+    border: 2px solid white; /* You can adjust the border width and color */
+    border-radius: 5px; /* Add rounded corners to the border if desired */
+	padding: 5px;	
+}
+
+

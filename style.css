@@ -4,9 +4,14 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background: #C5C6D0;
+	
 	color: #fff;
 }
+
+body {
+	background: #C5C6D0;
+}
+
 /* To center everything in game */
 .game{
 	display: flex;
@@ -30,7 +35,7 @@
 /* Score Board */
 .score{
     display: flex;
-    width: 30vw;
+
     justify-content: space-evenly ;
 }
 
@@ -42,10 +47,12 @@
 	
 }
 
+
+
 /* displaying three buttons in one line */
 .options{
 	display: flex;
-	width: 50vw;
+
 	justify-content: space-evenly;
 	margin-top: 2rem;
 }
@@ -93,7 +100,7 @@
 	.score{
 		position: absolute;
 		top: 200px;
-		width: 100vw;
+		
 	}
 	.options{
 		width: 100vw;

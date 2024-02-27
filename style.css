@@ -76,7 +76,7 @@ body {
 
 /* Reload button style */
 .reload {
-	display: none;
+	display: all;
 	margin-top: 2rem;
 	padding: 1rem;
 	background: green;

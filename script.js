@@ -1,10 +1,20 @@
-// JavaScript code (scriptj.js)
+//Query Selector: Returns the first element within the document
+
+// JavaScript code (script.js)
 
 // Variables to track scores
 let playerScore = 0;
 let computerScore = 0;
 let roundsLeft = 10;
+// Prompt for the player's name
+//let playerName = prompt("Please enter your name:");
 
+// Function to play a single round
+function playRound(playerSelection) {
+    const computerSelection = computerPlay();
+}
+
+    document.getElementById('userName').textContent = playerName;
 // Function to generate computer's choice randomly
 function computerPlay() {
     const choices = ['rock', 'paper', 'scissors'];
@@ -17,12 +27,13 @@ function playRound(playerSelection) {
     const computerSelection = computerPlay();
 
     // Update the UI to display the choices
+    //${playerSelection.toUpperCase()}: This part evaluates the playerSelection variable and converts it to uppercase using the toUpperCase() method. 
     document.querySelector('.result').innerHTML = `
-        You chose ${playerSelection.toUpperCase()} <br>
+        You chose ${playerSelection.toUpperCase()} <br> 
         Computer chose ${computerSelection.toUpperCase()}
     `;
 
-    // Determine the winner of the round
+    // This block determines the winner of the round based on the choices made by the player and the computer and updates the scores accordingly. 
     if (
         (playerSelection === 'rock' && computerSelection === 'scissors') ||
         (playerSelection === 'paper' && computerSelection === 'rock') ||
@@ -47,11 +58,14 @@ function playRound(playerSelection) {
     // Update rounds left on UI
     document.querySelector('.movesleft').textContent = `Moves Left: ${roundsLeft}`;
 
-    // Check if rounds left are 0 and display the final result
+    // This checks if all rounds have been played, and if so, it calls the declareWinner() function to determine and display the overall winner.
     if (roundsLeft === 0) {
         declareWinner();
     }
 }
+
+// The remaining code defines functions to declare the winner after all rounds are played, to reset the game, and to set event listeners for the buttons used in the game.
+
 
 // Function to declare the winner after all rounds are played
 function declareWinner() {

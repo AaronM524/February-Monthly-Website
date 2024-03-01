@@ -24,7 +24,7 @@ body {
 
 /* Title of the game */
 .title{
-	position: absolute;
+	text-align: center;
 	top: 0;
 	font-size: 4rem;
     font-family: "Protest Riot", sans-serif;
@@ -52,21 +52,17 @@ body {
 /* displaying three buttons in one line */
 .options{
 	display: flex;
-
 	justify-content: space-evenly;
 	margin-top: 2rem;
 }
 
 /* Styling on all three buttons */
-.rock, .paper, .scissor{
+.rock, .paper, .scissors {
 	padding: 0.8rem;
 	width: 100px;
-	border-radius: 10px;
-	background: C5C6D0;
 	outline: none;
-	border-color: green;
-	border: none;
 	cursor: pointer;
+	
 }
 
 .move{
@@ -91,35 +87,13 @@ body {
 	font-size: 1.2rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 612px) {
-
-	.title{
-		text-align: center;
-	}
-	.score{
-		position: absolute;
-		top: 200px;
-		
-	}
-	.options{
-		width: 100vw;
-	}
 
   .custombutton2 { 
     width:10px; 
     height: 10px;
 	border-width: 10px;
-	border-color: black;
 	border-style: solid;
   }
-  
-  .customfooter {
-    background-color: #2832C2;
-    color: white;
-	bottom: fixed;
-  }
-}
 
 .fonth2 {
 	font-family: "Protest Riot", sans-serif;
@@ -129,9 +103,12 @@ body {
 
 
 .button-img {
-    border: 2px solid white; /* You can adjust the border width and color */
-    border-radius: 5px; /* Add rounded corners to the border if desired */
 	padding: 5px;	
 }
 
-
+.img-size {
+max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+}

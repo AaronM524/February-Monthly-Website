@@ -62,9 +62,9 @@ function declareWinner() {
     // Display the overall winner
     let winnerMessage = '';
     if (playerScore > computerScore) {
-        winnerMessage = 'Congratulations! You win the game!';
+        winnerMessage = '<span style="color: green;">Congratulations! You win the game.</span>';
     } else if (playerScore < computerScore) {
-        winnerMessage = 'Computer wins the game!';
+        winnerMessage = '<span style="color: red;"> Computer wins the game.</span>';
     } else {
         winnerMessage = 'It\'s a tie!';
     }

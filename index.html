@@ -47,12 +47,15 @@
             <div class="movesleft">Moves Left: 10 </div>
 
             <div class="options">
-                <!-- Added 'img-fluid' class to the image to make it responsive -->
-                <button class="rock custombutton2 img-size"> <img class="img-fluid button-img "
-                        src="rock_jpeg-removebg-preview.png" /></button>
-                <button class="paper custombutton2 img-size"><img class="img-fluid button-img" src="paper.jpg" /></button>
-                <button class="paper custombutton2 img-size"><img class="img-fluid button-img" src="scissors.jpg" /></button>
-
+                <button class="rock custombutton2 img-size" onclick="playRound('rock')">
+                    <img class="img-fluid button-img" src="rock_jpeg-removebg-preview.png" />
+                </button>
+                <button class="paper custombutton2 img-size" onclick="playRound('paper')">
+                    <img class="img-fluid button-img" src="paper.jpg" />
+                </button>
+                <button class="scissors custombutton2 img-size" onclick="playRound('scissors')">
+                    <img class="img-fluid button-img" src="scissors.jpg" />
+                </button>
             </div>
 
             <!--Final result of game -->
@@ -63,7 +66,7 @@
         </div>
     </section>
 
-    //footer
+    
 <footer> 
     <footer class="bg-dark text-center text-white footerstyle">
         <!-- Grid container -->

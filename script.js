@@ -5,7 +5,7 @@ let playerScore = 0;
 let computerScore = 0;
 let roundsLeft = 10;
 
-    document.getElementById('userName').textContent = playerName;
+
 // Function to generate computer's choice randomly
 function computerPlay() {
     const choices = ['rock', 'paper', 'scissors'];
@@ -17,11 +17,8 @@ function computerPlay() {
 function playRound(playerSelection) {
     const computerSelection = computerPlay();
 
-    // Update the UI to display the choices
-    //Converts it to uppercase using the toUpperCase() method. 
-    document.querySelector('.result').innerHTML = `
-        You chose ${playerSelection.toUpperCase()} <br> 
-        Computer chose ${computerSelection.toUpperCase()}
+    // This allows it to display the choices. 
+    document.querySelector('.result').innerHTML = `You chose ${playerSelection.toUpperCase()} <br> Computer chose ${computerSelection.toUpperCase()}
     `;
 
     // This block determines the winner of the round based on the choices made by the player and the computer and updates the scores. 
